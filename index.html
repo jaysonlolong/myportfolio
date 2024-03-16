@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jayson Lolong | Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="#">Jayson Lolong</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" onclick="showSection('home')">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="showSection('projects')">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="showSection('experience')">Work Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="showSection('about')">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="showSection('contact')">Contact</a>
+      </li>
+      <!-- New navigation item for Credits section -->
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="showSection('credits')">Credits</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<section id="home" class="section" style="display: block;">
+  <div class="container">
+    <h1>Welcome to my Portfolio website!</h1>
+    <p>This is where I showcase my work and skills.</p>
+  </div>
+</section>
+
+<section id="experience" class="section" style="display: none;">
+  <div class="container">
+    <h2>Work Experience</h2>
+    <div>
+      <h3>Company Name</h3>
+      <p>Position: Web Developer</p>
+      <p>Duration: January 2020 - Present</p>
+      <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id sapien eu mi varius imperdiet. Donec finibus tellus at purus varius dictum. Sed malesuada tortor ut justo congue, in fermentum quam faucibus.</p>
+    </div>
+    <!-- Add more experiences here -->
+  </div>
+</section>
+
+<section id="projects" class="section" style="display: none;">
+  <div class="container">
+    <h2>Projects</h2>
+    <!-- Your project items here -->
+  </div>
+</section>
+
+<section id="about" class="section" style="display: none;">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>I am a passionate web developer with experience in HTML, CSS, JavaScript, and more.</p>
+  </div>
+</section>
+
+<section id="contact" class="section" style="display: none;">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <!-- Your contact form here -->
+  </div>
+</section>
+
+<section id="credits" class="section" style="display: none;">
+  <div class="container">
+    <h2>Credits</h2>
+    <p>Background: <a href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/">Free SVG Backgrounds and Patterns by SVGBackgrounds.com</a></p>
+    <p>Icons: <a href="https://fontawesome.com/">Font Awesome</a></p>
+  </div>
+</section>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  // JavaScript function to show/hide sections based on clicked navigation link
+  function showSection(sectionId) {
+    // Hide all sections
+    $('.section').hide();
+    // Show the selected section
+    $('#' + sectionId).show();
+    // Close the navbar
+    $('.navbar-collapse').collapse('hide');
+  }
+</script>
+</body>
+</html>
